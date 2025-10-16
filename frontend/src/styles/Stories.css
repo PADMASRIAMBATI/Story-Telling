@@ -1,0 +1,325 @@
+/* Story Form Styles */
+.create-story-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.page-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.story-form {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+.generate-btn {
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Story List Styles */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.story-card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.story-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.story-card-header {
+  display: flex;
+  justify-content: between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.story-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+  flex: 1;
+}
+
+.favorite-badge {
+  color: #f6ad55;
+  font-size: 1.25rem;
+}
+
+.story-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.genre-tag,
+.language-tag,
+.length-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.genre-tag {
+  background: #e9d8fd;
+  color: #6b46c1;
+}
+
+.language-tag {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.length-tag {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.story-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.story-card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Story Detail Styles */
+.story-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.story-header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.story-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.story-meta-large {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.genre-badge,
+.language-badge,
+.length-badge,
+.tone-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.genre-badge {
+  background: #e9d8fd;
+  color: #6b46c1;
+}
+
+.language-badge {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.length-badge {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.tone-badge {
+  background: #fefcbf;
+  color: #744210;
+}
+
+.story-info {
+  display: flex;
+  gap: 2rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.story-prompt,
+.story-content,
+.story-characters,
+.story-setting {
+  margin-bottom: 2rem;
+}
+
+.story-prompt h3,
+.story-content h3,
+.story-characters h3,
+.story-setting h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.story-prompt p {
+  background: var(--bg-light);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.content-text {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.content-text p {
+  margin-bottom: 1.5rem;
+}
+
+.characters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.character-tag {
+  background: var(--bg-light);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+/* Loading States */
+.stories-loading,
+.story-detail-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: var(--text-light);
+}
+
+.no-stories,
+.no-story {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-light);
+}
+
+.no-stories-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.no-stories h3,
+.no-story h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+/* Success Modal */
+.success-modal-content {
+  text-align: center;
+}
+
+.success-modal-content p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Pagination */
+.pagination-info {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-light);
+  border-top: 1px solid var(--border-color);
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-story-page {
+    padding: 1rem;
+  }
+  
+  .story-detail {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .story-title {
+    font-size: 2rem;
+  }
+  
+  .story-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-actions {
+    flex-direction: column;
+  }
+}
