@@ -1,0 +1,21 @@
+# FastAPI and core dependencies
+fastapi
+uvicorn
+pydantic-settings
+python-dotenv
+python-multipart
+motor
+uvicorn[standard]
+python-jose
+bcrypt
+
+# AI and Fine-Tuning Libraries (Crucial for Gemma/QLoRA)
+torch
+transformers
+peft
+trl
+bitsandbytes
+accelerate
+
+# Utility for parallel downloads (recommended for Hugging Face)
+huggingface_hub[hf_transfer]
